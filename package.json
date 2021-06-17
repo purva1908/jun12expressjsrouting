@@ -1,0 +1,24 @@
+{
+  "name": "jun12expressjsrouting",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/purva1908/jun12expressjsrouting.git"
+  },
+  "author": "purva tayde(purvatayde1908@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/purva1908/jun12expressjsrouting/issues"
+  },
+  "homepage": "https://github.com/purva1908/jun12expressjsrouting#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  },
+  "type": "module"
+}

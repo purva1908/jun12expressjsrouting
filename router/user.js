@@ -1,0 +1,15 @@
+//we are using express js so need to import it to use its features
+import express from "express"
+
+import { addUser, getUser } from "../controller/user.js"
+//making router var to be able to use get,post http methods. all methods are availbl.
+const router=express.Router()
+//here inside router.get fun we can give url here our url is localhost="/"=root
+router.get("/name",addUser) //localhos:8080/user/name url for http get
+router.post("/", getUser)  //localhos:8080/user url for http post
+// router.delete("/", addUser)
+// router.put()
+// router.patch()
+
+//this router we need to use in index.js file
+export default router
