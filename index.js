@@ -10,9 +10,9 @@ function myFunc(request, response){
     response.send("Hello Purva Routing js")
 }
 var server=express()
-//we can put url inside get fun onwhich url we want userROutes
-server.get("/user",userRoutes) //localhost:8080/user url is asssigned to specififc fun ie iserRoutes here
 server.use(bodyParser.json())
+//we can put url inside get fun onwhich url we want userROutes
+server.use("/user",userRoutes) //localhost:8080/user url is asssigned to specififc fun ie iserRoutes here used .use cz we r using it from router.
 server.get("/",myFunc)
 server.listen(8080)
 
