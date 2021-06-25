@@ -10,7 +10,7 @@ export const getUser=(req, res)=>{
 export const addUser=(req, res)=>{
     console.log("I am  in addUser function")
   
-    console.log(req.body.name)
+    console.log(req.body.name) //our data which client is sending will be in body i.e json format so used req.body.name
     res.status(201).send({
         message:"Your data got saved"
     })
