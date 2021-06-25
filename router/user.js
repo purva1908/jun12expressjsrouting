@@ -5,8 +5,8 @@ import { addUser, getUser } from "../controller/user.js"
 //making router var to be able to use get,post http methods. all methods are availbl.
 const router=express.Router()
 //here inside router.get fun we can give url here our url is localhost="/"=root
-router.get("/name",addUser) //localhos:8080/user/name url for http get
-router.post("/", getUser)  //localhos:8080/user url for http post
+router.get("/name",getUser) //localhos:8080/user/name url for http get
+router.post("/", addUser)  //localhos:8080/user url for http post
 // router.delete("/", addUser)
 // router.put()
 // router.patch()
